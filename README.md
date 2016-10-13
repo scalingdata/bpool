@@ -1,16 +1,16 @@
-# bpool [![GoDoc](https://godoc.org/github.com/oxtoacart/bpool?status.png)](https://godoc.org/github.com/oxtoacart/bpool)
+# bpool [![GoDoc](https://godoc.org/github.com/scalingdata/go-bpool?status.png)](https://godoc.org/github.com/scalingdata/go-bpool)
 
 Package bpool implements leaky pools of byte arrays and Buffers as bounded channels. 
 It is based on the leaky buffer example from the Effective Go documentation: http://golang.org/doc/effective_go.html#leaky_buffer
 
 bpool provides the following pool types:
 
-* [bpool.BufferPool](https://godoc.org/github.com/oxtoacart/bpool#BufferPool)
+* [bpool.BufferPool](https://godoc.org/github.com/scalingdata/go-bpool#BufferPool)
   which provides a fixed-size pool of
   [bytes.Buffers](http://golang.org/pkg/bytes/#Buffer).
-* [bpool.BytePool](https://godoc.org/github.com/oxtoacart/bpool#BytePool) which
+* [bpool.BytePool](https://godoc.org/github.com/scalingdata/go-bpool#BytePool) which
   provides a fixed-size pool of `[]byte` slices with a pre-set width (length).
-* [bpool.SizedBufferPool](https://godoc.org/github.com/oxtoacart/bpool#SizedBufferPool), 
+* [bpool.SizedBufferPool](https://godoc.org/github.com/scalingdata/go-bpool#SizedBufferPool), 
   which is an alternative to `bpool.BufferPool` that pre-sizes the capacity of
   buffers issued from the pool and discards buffers that have grown too large
   upon return.
@@ -23,11 +23,11 @@ to the response.
 
 ## Install
 
-`go get github.com/oxtoacart/bpool`
+`go get github.com/scalingdata/go-bpool`
 
 ## Documentation
 
-See [godoc.org](http://godoc.org/github.com/oxtoacart/bpool) or use `godoc github.com/oxtoacart/bpool`
+See [godoc.org](http://godoc.org/github.com/scalingdata/go-bpool) or use `godoc github.com/scalingdata/go-bpool`
 
 ## Example
 
